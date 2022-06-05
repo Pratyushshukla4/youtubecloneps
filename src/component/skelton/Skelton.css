@@ -1,0 +1,163 @@
+.skelton{
+       width: 300px;
+       height: 250px;
+       display: flex;
+       flex-direction: column;
+       /* border: 1px solid red; */
+       box-shadow: 0px 0px 1px 1px gray;
+       margin-top: 20px;
+       margin-left: 20px;
+       border-radius: 10px;
+       animation: skelton 1s ease infinite alternate;
+}
+
+@keyframes skelton {
+      
+    to{
+        opacity: 0.7;
+    }
+}
+.postimgsk{
+    background-color: gray;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+.postinfosk{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.profileimgsk{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    
+}
+.infosk{
+    display: flex;
+    flex-direction: column;
+    /* align-items: ; */
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 50px;
+justify-content: space-between;
+    margin-left: 10px;
+    
+}
+
+.txtfirstsk{
+    width: 80%;
+    height: 20px;
+    background-color: gray;
+}
+.txtsecsk{
+    width: 50%;
+    height: 20px;
+    background-color: gray;
+}
+
+.topsk{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex: 10vw;
+     /* width: 300px */
+     /* border: 2px solid red; */
+}
+.iconsk{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.sidesk{
+    width: 80px;
+    height: 89vh;
+    border: 2px solid rgb(185, 176, 176);
+    /* margin-left: 5px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-top: none;
+}
+.topsidesk{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+width: 80px;
+}
+.bottomsidesk{
+    flex: 5;
+
+}
+.sideskicon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.spin{
+    margin-top: 30px;
+    width: 90vw;
+    /* right:  50%; */
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    /* align-items: center; */
+
+}
+
+.custum{
+    width: 91vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    /* border: 1px solid red; */
+    height: 50px;
+}
+.balls{
+    /* border: 1px solid red; */
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.ball{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gray;
+    animation: ball 0.5s ease infinite alternate;
+}
+.ball2{
+    animation-delay: 0.2s;
+    /* border: 1px solid red; */
+}
+.ball3{
+    animation-delay: 0.4s;
+}
+
+@keyframes ball {
+    to{
+        transform: translateY(-12px);
+    }
+    
+}
+.custumtext{
+    font-size:20px;
+
+}

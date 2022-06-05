@@ -1,0 +1,7 @@
+.post{
+    display: flex;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}

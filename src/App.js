@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState }  from 'react'
+import Feed from './component/Feed/Feed';
+import Sidebar from './component/sidebar/Sidebar';
+import Topbar from "./component/topbar/Topbar";
+import Skelton from './component/skelton/Skelton';
 
-function App() {
+import "./App.css"
+
+
+
+const App = () => {
+
+  const [isloading , setisloading] = useState(true)
+
+  useEffect(()=>{
+    setTimeout(() => {
+
+      setisloading(false)
+      
+    }, 4000);
+  },[])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+       <Topbar/>
+   <div className='app'>
 
-export default App;
+     {
+       isloading ? <Skelton type="side"/> : <Sidebar/> 
+     }
+
+     
+      <Feed/>
+      </div>
+      
+       </>
+    
+  )
+  
+    } 
+
+export default App
